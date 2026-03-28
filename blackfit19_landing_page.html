@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,900;1,700&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">Black<span>Fit</span> 19</div>
+  <div class="nav-links">
+    <a href="#modalities">Modalidades</a>
+    <a href="#schedule">Horários</a>
+    <a href="#plans">Planos</a>
+    <a href="#contact">Contato</a>
+  </div>
+  <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Matricule-se</button>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-tag">Academia Premium · São Paulo</div>
+    <h1 class="hero-h1">
+      <span class="accent">Black</span><br>
+      <span class="outline">Fit</span><br>
+      <span style="color:var(--gold2)">19</span>
+    </h1>
+    <p class="hero-sub">
+      Mais do que uma academia —<br>
+      <strong>um estilo de vida.</strong> Treine com os melhores, evolua todos os dias.
+    </p>
+    <div class="hero-actions">
+      <a class="btn-primary" href="#plans">Ver Planos</a>
+      <a class="btn-ghost" href="#modalities">Modalidades →</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <div class="stat-num">7+</div>
+        <div class="stat-label">Modalidades</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">16h</div>
+        <div class="stat-label">Estrutura</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">100%</div>
+        <div class="stat-label">Comprometimento</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MODALIDADES -->
+<section class="modalities" id="modalities">
+  <div class="mod-inner">
+    <div class="mod-header">
+      <div class="section-tag">O que oferecemos</div>
+      <h2 class="section-h2">Moda<span class="g">lidades</span></h2>
+    </div>
+    <div class="mod-grid">
+      <div class="mod-card reveal">
+        <div class="mod-num">01</div>
+        <div class="mod-name">Musculação</div>
+        <div class="mod-desc">Equipamentos de ponta para você construir força e definição com segurança.</div>
+      </div>
+      <div class="mod-card reveal reveal-delay-1">
+        <div class="mod-num">02</div>
+        <div class="mod-name">Muay Thai</div>
+        <div class="mod-desc">Arte marcial completa que desenvolve condicionamento, técnica e autoconfiança.</div>
+      </div>
+      <div class="mod-card reveal reveal-delay-2">
+        <div class="mod-num">03</div>
+        <div class="mod-name">Boxe</div>
+        <div class="mod-desc">Treinamento técnico e funcional com luvas, sparring e muito suor.</div>
+      </div>
+      <div class="mod-card reveal reveal-delay-3">
+        <div class="mod-num">04</div>
+        <div class="mod-name">HIIT / Funcional</div>
+        <div class="mod-desc">Alta intensidade para quem quer resultados rápidos e duradouros.</div>
+      </div>
+      <div class="mod-card reveal reveal-delay-4">
+        <div class="mod-num">05</div>
+        <div class="mod-name">Step</div>
+        <div class="mod-desc">Cardio dinâmico e divertido para queimar calorias e melhorar a coordenação.</div>
+      </div>
+      <div class="mod-card reveal reveal-delay-1">
+        <div class="mod-num">06</div>
+        <div class="mod-name">Strong</div>
+        <div class="mod-desc">Treino de força com barras e anilhas para máxima performance muscular.</div>
+      </div>
+      <div class="mod-card reveal reveal-delay-2">
+        <div class="mod-num">07</div>
+        <div class="mod-name">GAP / Alongamento</div>
+        <div class="mod-desc">Glúteos, abdômen e pernas — mais flexibilidade, postura e leveza no dia a dia.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HORÁRIOS -->
+<section class="schedule" id="schedule">
+  <div class="sched-inner">
+    <div class="sched-header reveal">
+      <div class="section-tag">Organização</div>
+      <h2 class="section-h2">Horá<span class="g">rios</span></h2>
+    </div>
+    <div class="sched-table-wrap reveal">
+      <table class="sched-table">
+        <thead>
+          <tr>
+            <th>Modalidade</th>
+            <th>Seg – Sex</th>
+            <th>Sábado</th>
+            <th>Domingo</th>
+            <th>Nível</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Musculação</strong></td><td>06h – 22h</td><td>08h – 14h</td><td>–</td><td><span class="badge">Todos</span></td></tr>
+          <tr><td><strong>Muay Thai</strong></td><td>07h, 12h, 19h</td><td>09h</td><td>—</td><td><span class="badge">Todos</span></td></tr>
+          <tr><td><strong>Boxe</strong></td><td>07h, 19h30</td><td>09h</td><td>—</td><td><span class="badge">Todos</span></td></tr>
+          <tr><td><strong>HIIT / Funcional</strong></td><td>06h30, 08h, 18h30</td><td>08h</td><td>—</td><td><span class="badge">Todos</span></td></tr>
+          <tr><td><strong>Step</strong></td><td>09h, 18h</td><td>09h</td><td>—</td><td><span class="badge">Todos</span></td></tr>
+          <tr><td><strong>Strong</strong></td><td>08h, 17h</td><td>10h</td><td>—</td><td><span class="badge">Intermediário</span></td></tr>
+          <tr><td><strong>GAP / Alongamento</strong></td><td>07h, 10h, 19h</td><td>09h</td><td>—</td><td><span class="badge">Todos</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:13px;color:var(--gray);margin-top:20px;letter-spacing:.3px">* Horários sujeitos a alteração. Confirme com a recepção.</p>
+  </div>
+</section>
+
+<!-- PLANOS -->
+<section class="plans" id="plans">
+  <div class="plans-inner">
+    <div class="plans-header reveal">
+      <div class="section-tag">Investimento</div>
+      <h2 class="section-h2">Planos &amp; <span class="g">Preços</span></h2>
+    </div>
+    <div class="plans-grid">
+      <!-- Básico -->
+      <div class="plan-card reveal">
+        <div class="plan-label">Plano</div>
+        <div class="plan-name">Básico</div>
+        <div class="plan-price-row">
+          <span class="plan-currency">R$</span>
+          <span class="plan-price">89</span>
+          <span class="plan-period">/mês</span>
+        </div>
+        <div class="plan-divider"></div>
+        <ul class="plan-features">
+          <li>Musculação livre</li>
+          <li>Acesso nos horários padrão</li>
+          <li>Avaliação física inicial</li>
+          <li>Vestiário completo</li>
+        </ul>
+        <a class="plan-cta" href="#contact">Começar agora</a>
+      </div>
+      <!-- Premium (featured) -->
+      <div class="plan-card featured reveal reveal-delay-1">
+        <div class="plan-label">Plano</div>
+        <div class="plan-name">Premium</div>
+        <div class="plan-price-row">
+          <span class="plan-currency">R$</span>
+          <span class="plan-price">149</span>
+          <span class="plan-period">/mês</span>
+        </div>
+        <div class="plan-divider"></div>
+        <ul class="plan-features">
+          <li>Musculação + 2 aulas por semana</li>
+          <li>Acesso ilimitado ao horário</li>
+          <li>Avaliação física mensal</li>
+          <li>Acompanhamento nutricional</li>
+          <li>Vestiário premium</li>
+        </ul>
+        <a class="plan-cta" href="#contact">Começar agora</a>
+      </div>
+      <!-- Black (VIP) -->
+      <div class="plan-card reveal reveal-delay-2">
+        <div class="plan-label">Plano</div>
+        <div class="plan-name">Black VIP</div>
+        <div class="plan-price-row">
+          <span class="plan-currency">R$</span>
+          <span class="plan-price">219</span>
+          <span class="plan-period">/mês</span>
+        </div>
+        <div class="plan-divider"></div>
+        <ul class="plan-features">
+          <li>Acesso ilimitado a tudo</li>
+          <li>Aulas ilimitadas todas as modalidades</li>
+          <li>Personal trainer incluso</li>
+          <li>Nutricionista parceiro</li>
+          <li>Área VIP exclusiva</li>
+          <li>Kit Black Fit brinde</li>
+        </ul>
+        <a class="plan-cta" href="#contact">Começar agora</a>
+      </div>
+    </div>
+    <p style="font-size:13px;color:var(--gray);margin-top:20px;text-align:center">Planos anuais com desconto especial · Consulte condições na recepção</p>
+  </div>
+</section>
+
+<!-- GALERIA -->
+<section class="gallery" id="gallery">
+  <div class="gallery-inner">
+    <div class="gal-header reveal">
+      <div class="section-tag">Nossa estrutura</div>
+      <h2 class="section-h2">Gale<span class="g">ria</span></h2>
+    </div>
+    <div class="gal-grid reveal">
+      <div class="gal-item">
+        <div class="gal-placeholder">
+          <div class="gal-icon">🏋️</div>
+          <div class="gal-text">Musculação</div>
+        </div>
+      </div>
+      <div class="gal-item">
+        <div class="gal-placeholder">
+          <div class="gal-icon">🥊</div>
+          <div class="gal-text">Boxe / Muay Thai</div>
+        </div>
+      </div>
+      <div class="gal-item">
+        <div class="gal-placeholder">
+          <div class="gal-icon">⚡</div>
+          <div class="gal-text">Funcional</div>
+        </div>
+      </div>
+      <div class="gal-item">
+        <div class="gal-placeholder">
+          <div class="gal-icon">💪</div>
+          <div class="gal-text">Strong</div>
+        </div>
+      </div>
+      <div class="gal-item">
+        <div class="gal-placeholder">
+          <div class="gal-icon">🏃</div>
+          <div class="gal-text">Step / GAP</div>
+        </div>
+      </div>
+    </div>
+    <p class="gal-note reveal">📸 Adicione suas fotos reais para dar vida à galeria!</p>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section class="contact" id="contact">
+  <div class="contact-inner">
+    <div class="contact-left reveal">
+      <div class="section-tag">Fale conosco</div>
+      <h2 class="section-h2">Vem<br>ser <span class="g">Black</span></h2>
+      <p class="contact-desc">Dê o primeiro passo. Nossa equipe está pronta para tirar suas dúvidas e encontrar o plano ideal para o seu objetivo.</p>
+      <div class="contact-info">
+        <div class="contact-row">
+          <span class="contact-row-label">Endereço</span>
+          <span class="contact-row-val">Avenida Furtado de Mendonça <br>São Paulo – SP</span>
+        </div>
+        <div class="contact-row">
+          <span class="contact-row-label">Horário</span>
+          <span class="contact-row-val">Seg–Sex: 06h–22h<br>Sáb: 08h–13h</span>
+        </div>
+        <div class="contact-row">
+          <span class="contact-row-label">Telefone</span>
+          <span class="contact-row-val">(11) 9 0000-0000</span>
+        </div>
+      </div>
+    </div>
+    <div class="contact-right reveal reveal-delay-1">
+      <div class="form-group">
+        <label class="form-label">Nome completo</label>
+        <input type="text" class="form-input" placeholder="Seu nome">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Telefone / WhatsApp</label>
+        <input type="tel" class="form-input" placeholder="(11) 9 0000-0000">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Modalidade de interesse</label>
+        <select class="form-select">
+          <option value="">Selecione...</option>
+          <option>Musculação</option>
+          <option>Muay Thai</option>
+          <option>Boxe</option>
+          <option>HIIT / Funcional</option>
+          <option>Step</option>
+          <option>Strong</option>
+          <option>GAP / Alongamento</option>
+          <option>Plano Completo</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Mensagem (opcional)</label>
+        <textarea class="form-textarea" placeholder="Dúvidas, objetivos..."></textarea>
+      </div>
+      <a class="wpp-btn" href="https://wa.me/5511900000000" target="_blank">
+        <svg class="wpp-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Falar pelo WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Black<span>Fit</span> 19</div>
+  <div class="footer-copy">© 2026 Black Fit 19 · Todos os direitos reservados</div>
+</footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
