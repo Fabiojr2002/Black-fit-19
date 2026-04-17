@@ -74,7 +74,7 @@ nav.nav-solid{
     linear-gradient(90deg, rgba(212,160,23,0.04) 1px, transparent 1px);
   background-size:60px 60px;
 }
-.hero-content{position:relative;z-index:2;max-width:900px;width:100%;margin:0;display:flex;flex-direction:column;align-items:flex-end;text-align:right}
+.hero-content{position:relative;z-index:2;max-width:640px;width:100%;margin-right:35vw;display:flex;flex-direction:column;align-items:flex-start;text-align:left}
 .hero-tag{
   display:inline-flex;align-items:center;gap:8px;
   font-size:11px;font-weight:500;letter-spacing:3px;text-transform:uppercase;
@@ -193,14 +193,13 @@ section{padding:100px 48px}
 }
 
 /* PLANOS */
+.plan-card {padding: 32px 24px;}
 .plans{background:var(--black2)}
 .plans-inner{max-width:1100px;margin:0 auto}
 .plans-header{margin-bottom:64px}
 .plans-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1px;background:rgba(212,160,23,0.1)}
-.plan-card{
-  background:var(--black2);padding:48px 36px;
-  position:relative;
-}
+.plans-grid {grid-template-columns: repeat(4, 1fr);
+  gap: 1px;}
 .plan-card.featured{background:var(--black3)}
 .plan-card.featured::before{
   content:'MAIS POPULAR';
@@ -212,7 +211,7 @@ section{padding:100px 48px}
 .plan-label{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:16px}
 .plan-name{font-family:var(--font-head);font-weight:900;font-size:32px;text-transform:uppercase;letter-spacing:1px;color:var(--white)}
 .plan-price-row{display:flex;align-items:baseline;gap:4px;margin:28px 0}
-.plan-currency{font-size:16px;font-weight:300;color:var(--gray);margin-top:4px}
+.plan-currency{font-size:20px;font-weight:300;color:var(--gray);margin-top:4px}
 .plan-price{font-family:var(--font-head);font-size:64px;font-weight:900;color:var(--gold2);line-height:1}
 .plan-period{font-size:13px;color:var(--gray)}
 .plan-divider{height:1px;background:rgba(212,160,23,0.1);margin:28px 0}
