@@ -15,7 +15,7 @@ const hero = document.querySelector('.hero');
 
 const updateNavState = () => {
   if (!nav || !hero) return;
-  const triggerPoint = hero.offsetHeight - nav.offsetHeight;
+  const triggerPoint = 24;
   nav.classList.toggle('nav-solid', window.scrollY > triggerPoint);
 };
 
