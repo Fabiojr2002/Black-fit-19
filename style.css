@@ -25,7 +25,13 @@ nav{
   position:fixed;top:0;left:0;right:0;z-index:100;
   display:flex;align-items:center;justify-content:space-between;
   padding:18px 48px;
-  background:rgba(10,10,10,0.9);
+  background:transparent;
+  backdrop-filter:none;
+  border-bottom:1px solid transparent;
+  transition:background .25s,border-color .25s,backdrop-filter .25s;
+}
+nav.nav-solid{
+  background:rgba(10,10,10,0.92);
   backdrop-filter:blur(10px);
   border-bottom:1px solid rgba(212,160,23,0.15);
 }
@@ -44,10 +50,16 @@ nav{
 
 /* HERO */
 .hero{
-  min-height:100vh;display:flex;align-items:center;justify-content:center;
+  min-height:100vh;display:flex;align-items:center;justify-content:flex-end;
   position:relative;overflow:hidden;
   background:var(--black);
   padding:120px 48px 80px;
+}
+.hero-video{
+  position:absolute;inset:0;
+  width:100%;height:100%;
+  object-fit:cover;
+  opacity:.38;
 }
 .hero-bg{
   position:absolute;inset:0;
@@ -62,7 +74,7 @@ nav{
     linear-gradient(90deg, rgba(212,160,23,0.04) 1px, transparent 1px);
   background-size:60px 60px;
 }
-.hero-content{position:relative;z-index:2;max-width:900px;margin:0 auto}
+.hero-content{position:relative;z-index:2;max-width:900px;width:100%;margin:0;display:flex;flex-direction:column;align-items:flex-end;text-align:right}
 .hero-tag{
   display:inline-flex;align-items:center;gap:8px;
   font-size:11px;font-weight:500;letter-spacing:3px;text-transform:uppercase;
@@ -105,6 +117,8 @@ nav{
 .hero-stats{
   display:flex;gap:48px;margin-top:80px;
   padding-top:40px;border-top:1px solid rgba(212,160,23,0.15);
+  align-self:flex-start;
+  text-align:left;
 }
 .stat-item{}
 .stat-num{font-family:var(--font-head);font-weight:900;font-size:42px;color:var(--gold2);line-height:1}
@@ -315,7 +329,8 @@ footer{
   nav{padding:16px 24px}
   .nav-links{display:none}
   section{padding:70px 24px}
-  .hero{padding:100px 24px 60px}
+  .hero{padding:100px 24px 60px;justify-content:center}
+  .hero-content{align-items:flex-start;text-align:left}
   .hero-stats{gap:28px}
   .stat-num{font-size:32px}
   .contact-inner{grid-template-columns:1fr;gap:48px}

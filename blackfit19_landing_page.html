@@ -27,6 +27,10 @@
 
 <!-- HERO -->
 <section class="hero" id="home">
+  <video class="hero-video" autoplay muted loop playsinline>
+    <source src="hero.mp4" type="video/mp4">
+    <source src="hero.mov" type="video/mp4">
+  </video>
   <div class="hero-bg"></div>
   <div class="hero-grid"></div>
   <div class="hero-content">
@@ -60,32 +64,6 @@
     </div>
   </div>
 </section>
-
-<!-- VIDEO HERO -->
-<div style="width:100%;background:#000;position:relative;overflow:hidden;">
-  <video
-    autoplay
-    muted
-    loop
-    playsinline
-    style="width:100%;max-height:85vh;object-fit:cover;display:block;opacity:0.85;"
-  >
-    <source src="estrutura.mov" type="video/mp4">
-  </video>
-
-  <!-- Overlay dourado sutil -->
-  <div style="
-  position:absolute;inset:0;
-  background:linear-gradient(
-    to bottom,
-    rgba(10,10,10,1) 0%,
-    rgba(10,10,10,0.0) 15%,
-    rgba(10,10,10,0.0) 60%,
-    rgba(10,10,10,1) 100%
-  );
-  pointer-events:none;
-"></div>
-</div>
 
 <!-- MODALIDADES -->
 <section class="modalities" id="modalities">
