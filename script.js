@@ -33,7 +33,7 @@ const initHeroLogoScrollAnimation = () => {
   gsap.registerPlugin(ScrollTrigger);
 
   if (!heroTitle.dataset.splitReady) {
-    heroTitle.querySelectorAll('span').forEach((word) => {
+    heroTitle.querySelectorAll('.split-text').forEach((word) => {
       const chars = [...word.textContent];
       word.textContent = '';
       chars.forEach((char) => {
