@@ -131,6 +131,8 @@ nav.nav-solid{
   color:transparent;
   -webkit-text-stroke:1px rgba(212,160,23,0.5);
 }
+.hero-char{display:inline-block}
+.hero-char.space{width:.3em}
 .hero-sub{
   margin-top:32px;font-size:16px;font-weight:300;line-height:1.7;
   color:var(--gray);max-width:480px;letter-spacing:.3px;
