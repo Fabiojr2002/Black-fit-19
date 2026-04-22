@@ -23,45 +23,4 @@ window.addEventListener('scroll', updateNavState, { passive: true });
 window.addEventListener('resize', updateNavState);
 updateNavState();
 
-// Hero logo animation (letter by letter) on scroll using GSAP + ScrollTrigger
-const initHeroLogoScrollAnimation = () => {
-  if (!window.gsap || !window.ScrollTrigger || !hero) return;
 
-  const heroTitle = document.querySelector('.hero-h1');
-  if (!heroTitle) return;
-
-  gsap.registerPlugin(ScrollTrigger);
-
-  if (!heroTitle.dataset.splitReady) {
-    heroTitle.querySelectorAll('.split-text').forEach((word) => {
-      const chars = [...word.textContent];
-      word.textContent = '';
-      chars.forEach((char) => {
-        const letter = document.createElement('span');
-        letter.className = `hero-char${char === ' ' ? ' space' : ''}`;
-        letter.textContent = char === ' ' ? '\u00A0' : char;
-        word.appendChild(letter);
-      });
-    });
-    heroTitle.dataset.splitReady = 'true';
-  }
-
-  const chars = heroTitle.querySelectorAll('.hero-char');
-  if (!chars.length) return;
-
-  gsap.to(chars, {
-    opacity: 0,
-    y: -26,
-    filter: 'blur(6px)',
-    stagger: { each: 0.06, from: 'start' },
-    ease: 'none',
-    scrollTrigger: {
-      trigger: hero,
-      start: 'top top',
-      end: 'bottom top',
-      scrub: true
-    }
-  });
-};
-
-initHeroLogoScrollAnimation();
