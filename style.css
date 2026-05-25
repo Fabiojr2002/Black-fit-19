@@ -332,35 +332,49 @@ section{padding:100px 48px}
 .gal-header{margin-bottom:48px}
 .gal-grid{
   display:grid;
-  grid-template-columns:repeat(12, 1fr);
-  grid-template-rows:200px 200px;
-  gap:4px;
+  grid-template-columns:repeat(4, minmax(0, 1fr));
+  gap:12px;
 }
-.gal-item{background:var(--black3);position:relative;overflow:hidden;cursor:pointer}
-.gal-item:nth-child(1){grid-column:span 5;grid-row:span 2}
-.gal-item:nth-child(2){grid-column:span 4}
-.gal-item:nth-child(3){grid-column:span 3}
-.gal-item:nth-child(4){grid-column:span 3}
-.gal-item:nth-child(5){grid-column:span 4}
+.gal-item{
+  background:var(--black3);
+  position:relative;
+  overflow:hidden;
+  cursor:pointer;
+  min-height:280px;
+  border:1px solid rgba(212,160,23,0.18);
+}
+.gal-image{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  opacity:0;
+  transition:opacity .35s ease;
+}
 .gal-placeholder{
   width:100%;height:100%;
   display:flex;flex-direction:column;align-items:center;justify-content:center;
   gap:8px;
+  background:linear-gradient(135deg,#111 0%,#1a1600 100%);
+  transition:opacity .35s ease;
 }
-.gal-icon{font-size:28px;opacity:0.15}
-.gal-text{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gray);opacity:0.4}
+.gal-icon{width:28px;height:28px;object-fit:contain;opacity:0.8}
+.gal-text{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--gray)}
 .gal-item::after{
-  content:'';position:absolute;inset:0;
-  background:linear-gradient(to top,rgba(212,160,23,0.3) 0%,transparent 60%);
-  opacity:0;transition:opacity .3s;
+  content:'';
+  position:absolute;
+  inset:0;
+  background:linear-gradient(to top,rgba(0,0,0,.35) 0%,transparent 70%);
+  opacity:0;
+  transition:opacity .35s ease;
 }
-.gal-item:hover::after{opacity:1}
-/* Decorative lines inside gal items */
-.gal-item:nth-child(1) .gal-placeholder{background:linear-gradient(135deg,#111 0%,#1a1600 100%)}
-.gal-item:nth-child(2) .gal-placeholder{background:linear-gradient(135deg,#0f0f0f 0%,#181500 100%)}
-.gal-item:nth-child(3) .gal-placeholder{background:#111}
-.gal-item:nth-child(4) .gal-placeholder{background:#0f0f0f}
-.gal-item:nth-child(5) .gal-placeholder{background:linear-gradient(135deg,#111 0%,#1a1600 100%)}
+.gal-item:hover .gal-image,
+.gal-item:focus-within .gal-image{opacity:1}
+.gal-item:hover .gal-placeholder,
+.gal-item:focus-within .gal-placeholder{opacity:0}
+.gal-item:hover::after,
+.gal-item:focus-within::after{opacity:1}
 .gal-note{font-size:12px;color:var(--gray);margin-top:16px;letter-spacing:.5px}
 
 /* CONTATO */
