@@ -81,36 +81,46 @@
       <div class="section-tag">O que oferecemos</div>
       <h2 class="section-h2">Moda<span class="g">lidades</span></h2>
     </div>
-    <div class="mod-grid">
-      <div class="mod-card reveal">
-        <div class="mod-num">01</div>
-        <div class="mod-name">Muay Thai</div>
-        <div class="mod-desc">Arte marcial completa que desenvolve condicionamento, técnica e autoconfiança.</div>
+    <div class="mod-content">
+      <div class="mod-3d-wrap reveal" aria-label="Ícone 3D da academia">
+        <div id="pesinho-3d" class="mod-3d-canvas"></div>
+        <div id="pesinho-fallback" class="mod-3d-fallback" aria-hidden="true">
+          <span class="pesinho-bar"></span>
+          <span class="pesinho-plate pesinho-plate-left"></span>
+          <span class="pesinho-plate pesinho-plate-right"></span>
+        </div>
       </div>
-      <div class="mod-card reveal reveal-delay-2">
-        <div class="mod-num">02</div>
-        <div class="mod-name">Boxe</div>
-        <div class="mod-desc">Treinamento técnico e funcional com luvas, sparring e muito suor.</div>
-      </div>
-      <div class="mod-card reveal reveal-delay-3">
-        <div class="mod-num">03</div>
-        <div class="mod-name">HIIT / Funcional</div>
-        <div class="mod-desc">Alta intensidade para quem quer resultados rápidos e duradouros.</div>
-      </div>
-      <div class="mod-card reveal reveal-delay-4">
-        <div class="mod-num">04</div>
-        <div class="mod-name">Step</div>
-        <div class="mod-desc">Cardio dinâmico e divertido para queimar calorias e melhorar a coordenação.</div>
-      </div>
-      <div class="mod-card reveal reveal-delay-1">
-        <div class="mod-num">05</div>
-        <div class="mod-name">Strong</div>
-        <div class="mod-desc">Treino de força com barras e anilhas para máxima performance muscular.</div>
-      </div>
-      <div class="mod-card reveal reveal-delay-2">
-        <div class="mod-num">06</div>
-        <div class="mod-name">GAP / Alongamento</div>
-        <div class="mod-desc">Glúteos, abdômen e pernas — mais flexibilidade, postura e leveza no dia a dia.</div>
+      <div class="mod-grid">
+        <div class="mod-card reveal">
+          <div class="mod-num">01</div>
+          <div class="mod-name">Muay Thai</div>
+          <div class="mod-desc">Arte marcial completa que desenvolve condicionamento, técnica e autoconfiança.</div>
+        </div>
+        <div class="mod-card reveal reveal-delay-2">
+          <div class="mod-num">02</div>
+          <div class="mod-name">Boxe</div>
+          <div class="mod-desc">Treinamento técnico e funcional com luvas, sparring e muito suor.</div>
+        </div>
+        <div class="mod-card reveal reveal-delay-3">
+          <div class="mod-num">03</div>
+          <div class="mod-name">HIIT / Funcional</div>
+          <div class="mod-desc">Alta intensidade para quem quer resultados rápidos e duradouros.</div>
+        </div>
+        <div class="mod-card reveal reveal-delay-4">
+          <div class="mod-num">04</div>
+          <div class="mod-name">Step</div>
+          <div class="mod-desc">Cardio dinâmico e divertido para queimar calorias e melhorar a coordenação.</div>
+        </div>
+        <div class="mod-card reveal reveal-delay-1">
+          <div class="mod-num">05</div>
+          <div class="mod-name">Strong</div>
+          <div class="mod-desc">Treino de força com barras e anilhas para máxima performance muscular.</div>
+        </div>
+        <div class="mod-card reveal reveal-delay-2">
+          <div class="mod-num">06</div>
+          <div class="mod-name">GAP / Alongamento</div>
+          <div class="mod-desc">Glúteos, abdômen e pernas — mais flexibilidade, postura e leveza no dia a dia.</div>
+        </div>
       </div>
     </div>
   </div>
@@ -118,6 +128,13 @@
 
 <!-- HORÁRIOS -->
 <section class="schedule" id="schedule">
+  <div class="schedule-bg-carousel" aria-hidden="true">
+    <img src="estrutura.JPG" alt="" class="schedule-bg-image is-active">
+    <img src="estrutura 2.JPG" alt="" class="schedule-bg-image">
+    <img src="estrutura3.JPG" alt="" class="schedule-bg-image">
+    <img src="estrutura4.JPG" alt="" class="schedule-bg-image">
+    <img src="estrutura5.JPG" alt="" class="schedule-bg-image">
+  </div>
   <div class="sched-inner">
     <div class="sched-header reveal">
       <div class="section-tag">Organização</div>
@@ -346,6 +363,8 @@
 
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
   <script src="script.js"></script>
 
 </body>
