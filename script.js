@@ -22,5 +22,3 @@ const updateNavState = () => {
 window.addEventListener('scroll', updateNavState, { passive: true });
 window.addEventListener('resize', updateNavState);
 updateNavState();
-
-
