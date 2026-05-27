@@ -23,7 +23,7 @@ Criar uma presença digital moderna e profissional para a academia, melhorando a
 
 Deploy
 
-https://blackfit19.netlify.app
+https://blackfit19.com.br/
 
 Preview
 
