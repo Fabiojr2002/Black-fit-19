@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Black Fit 19</title>
+  <link rel="icon" type="image/png" href="assets/icones/leao.PNG">
+  <link rel="stylesheet" href="style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,900;1,700&family=Barlow:wght@300;400;500&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">
+      <img src="assets/icones/logo.jpg.PNG" alt="Black Fit 19"
+        style="height:80px;width:auto;object-fit:contain;vertical-align:middle;margin-right:10px;">
+      Black<span>Fit</span> 19
+    </div>
+    <div class="nav-links">
+      <a href="#modalities">Modalidades</a>
+      <a href="#schedule">Horários</a>
+      <a href="#plans">Planos</a>
+      <a href="#contact">Contato</a>
+    </div>
+    <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+      <video class="nav-cta-video" autoplay muted loop playsinline>
+        <source src="assets/videos/card-subtitulo.mp4" type="video/mp4">
+      </video>
+      <span class="nav-cta-text">Matricule-se</span>
+    </button>
+  </nav>
+
+
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="assets/videos/hero.mp4" type="video/mp4">
+      <source src="hero.mov" type="video/mp4">
+    </video>
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-content">
+      <div class="hero-tag">Academia · São Paulo</div>
+      <h1 class="hero-h1">
+        <span class="accent split-text">Black</span><br>
+        <span class="outline split-text">Fit</span><br>
+        <span class="number-video hero-number" aria-label="19">
+          <video class="number-video-bg" autoplay muted loop playsinline>
+            <source src="assets/videos/card-subtitulo.mp4" type="video/mp4">
+          </video>
+        </span>
+      </h1>
+      <p class="hero-sub">
+        Mais do que uma academia —<br>
+        <strong>Um estilo de vida.</strong> Treine com os melhores, evolua todos os dias.
+      </p>
+      <div class="hero-actions">
+        <a class="btn-primary" href="#plans">Ver Planos</a>
+        <a class="btn-ghost" href="#modalities">Modalidades →</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-num">7+</div>
+          <div class="stat-label">Modalidades</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">16h</div>
+          <div class="stat-label">Estrutura</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">100%</div>
+          <div class="stat-label">Comprometimento</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODALIDADES -->
+  <section class="modalities" id="modalities">
+    <video class="section-bg-video" autoplay muted loop playsinline>
+      <source src="assets/videos/video-footer.mp4" type="video/mp4">
+    </video>
+    <div class="section-video-overlay" aria-hidden="true"></div>
+    <div class="mod-inner">
+      <div class="mod-header">
+        <div class="section-tag">O que oferecemos</div>
+        <h2 class="section-h2">Moda<span class="g">lidades</span></h2>
+      </div>
+
+      <div class="mod-grid">
+        <div class="mod-card reveal">
+          <div class="mod-num">01</div>
+          <div class="mod-name">Muay Thai</div>
+          <div class="mod-desc">Arte marcial completa que desenvolve condicionamento, técnica e autoconfiança.</div>
+        </div>
+        <div class="mod-card reveal reveal-delay-2">
+          <div class="mod-num">02</div>
+          <div class="mod-name">Fit Dance</div>
+          <div class="mod-desc">Aula dinâmica e envolvente que mistura dança, ritmo e diversão para melhorar o
+            condicionamento e elevar a autoestima.</div>
+        </div>
+        <div class="mod-card reveal reveal-delay-3">
+          <div class="mod-num">03</div>
+          <div class="mod-name">HIIT / Funcional</div>
+          <div class="mod-desc">Alta intensidade para quem quer resultados rápidos e duradouros.</div>
+        </div>
+        <div class="mod-card reveal reveal-delay-4">
+          <div class="mod-num">04</div>
+          <div class="mod-name">Step</div>
+          <div class="mod-desc">Cardio dinâmico e divertido para queimar calorias e melhorar a coordenação.</div>
+        </div>
+        <div class="mod-card reveal reveal-delay-1">
+          <div class="mod-num">05</div>
+          <div class="mod-name">Strong</div>
+          <div class="mod-desc">Treino de força com barras e anilhas para máxima performance muscular.</div>
+        </div>
+        <div class="mod-card reveal reveal-delay-2">
+          <div class="mod-num">06</div>
+          <div class="mod-name">GAP / Alongamento</div>
+          <div class="mod-desc">Glúteos, abdômen e pernas — mais flexibilidade, postura e leveza no dia a dia.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HORÁRIOS -->
+  <section class="schedule" id="schedule">
+    <div class="schedule-bg-carousel" aria-hidden="true">
+      <img src="assets/estrutura/estrutura.JPG" alt="" class="schedule-bg-image is-active">
+      <img src="assets/estrutura/estrutura 2.JPG" alt="" class="schedule-bg-image">
+      <img src="assets/estrutura/estrutura3.JPG" alt="" class="schedule-bg-image">
+      <img src="assets/estrutura/estrutura4.JPG" alt="" class="schedule-bg-image">
+      <img src="assets/estrutura/estrutura5.JPG" alt="" class="schedule-bg-image">
+    </div>
+    <div class="sched-inner">
+      <div class="sched-header reveal">
+        <div class="section-tag">Organização</div>
+        <h2 class="section-h2">Horá<span class="g">rios</span></h2>
+      </div>
+      <div class="sched-table-wrap reveal">
+        <table class="sched-table">
+          <thead>
+            <tr>
+              <th>Modalidade</th>
+              <th>Segunda</th>
+              <th>Terça</th>
+              <th>Quarta</th>
+              <th>Quinta</th>
+              <th>Sexta</th>
+              <th>Sabado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Musculação</strong></td>
+              <td>06h – 22h</td>
+              <td>06h – 22h</td>
+              <td>06h – 22h</td>
+              <td>06h – 22h</td>
+              <td>06h – 22h</td>
+              <td>08h – 13h</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><strong>Muay Thai</strong></td>
+              <td>—</td>
+              <td>20:30h</td>
+              <td>—</td>
+              <td>20:30h</td>
+              <td>20h</td>
+              <td>—</td>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Fit Dance</strong></td>
+              <td>—</td>
+              <td>—</td>
+              <td>—</td>
+              <td>—</td>
+              <td>21h</td>
+              <td>—</td>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>HIIT / Funcional</strong></td>
+              <td>19h</td>
+              <td>08h</td>
+              <td>19h</td>
+              <td>—</td>
+              <td>08h</td>
+              <td>—</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><strong>Step</strong></td>
+              <td>08h</td>
+              <td>—</td>
+              <td>20h</td>
+              <td>—</td>
+              <td>—</td>
+              <td>—</td>
+            </tr>
+            <tr>
+              <td><strong>Strong</strong></td>
+              <td>20h</td>
+              <td>—</td>
+              <td>—</td>
+              <td>08h</td>
+              <td>—</td>
+              <td>—</td>
+            </tr>
+            <tr>
+              <td><strong>GAP / Alongamento</strong></td>
+              <td>—</td>
+              <td>—</td>
+              <td>08h</td>
+              <td>—</td>
+              <td>—</td>
+              <td>—</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size:13px;color:var(--gray);margin-top:20px;letter-spacing:.3px">* Horários sujeitos a alteração.
+        Confirme com a recepção.</p>
+    </div>
+  </section>
+
+  <!-- PLANOS -->
+  <section class="plans" id="plans">
+    <video class="section-bg-video" autoplay muted loop playsinline>
+      <source src="assets/videos/video-hero.mp4" type="video/mp4">
+    </video>
+    <div class="section-video-overlay" aria-hidden="true"></div>
+    <div class="plans-inner">
+      <div class="plans-header reveal">
+        <div class="section-tag">Investimento</div>
+        <h2 class="section-h2">Planos &amp; <span class="g">Preços</span></h2>
+      </div>
+      <div class="plans-grid">
+        <!-- Básico -->
+        <div class="plan-card reveal">
+          <div class="plan-label">Plano</div>
+          <div class="plan-name">Black</div>
+          <div class="plan-price-row">
+            <span class="plan-currency">R$</span>
+            <span class="plan-price">89,99</span>
+            <span class="plan-period">/mês</span>
+          </div>
+          <p class="plan-payment-note">Plano Recorente</p>
+          <div class="plan-divider"></div>
+          <ul class="plan-features">
+            <li>Musculação livre</li>
+            <li>Acesso nos horários padrão</li>
+            <li>Aulas inclusas</li>
+            <li>Auxilio dos Professores</li>
+          </ul>
+          <a class="plan-cta" href="#contact">Começar agora</a>
+        </div>
+        <!-- Premium (featured) -->
+        <div class="plan-card featured reveal reveal-delay-1">
+          <div class="plan-label">Plano</div>
+          <div class="plan-name">Club+</div>
+          <div class="plan-price-row">
+            <span class="plan-currency">R$</span>
+            <span class="plan-price">66,67</span>
+            <span class="plan-period">/mês</span>
+          </div>
+          <p class="plan-payment-note">10x sem juros ou 4x de 200,00</p>
+          <div class="plan-divider"></div>
+          <ul class="plan-features">
+            <li>Sem taxa de matricula</li>
+            <li>15 dias para convidados</li>
+            <li>Avaliação física completa</li>
+            <li>E-books de dieta</li>
+            <li>pausa no contrato (30) dias</li>
+          </ul>
+          <a class="plan-cta" href="#contact">Começar agora</a>
+        </div>
+        <!-- Black (VIP) -->
+        <div class="plan-card reveal reveal-delay-2">
+          <div class="plan-label">Plano</div>
+          <div class="plan-name">Black Pro</div>
+          <div class="plan-price-row">
+            <span class="plan-currency">R$</span>
+            <span class="plan-price">444,00</span>
+            <span class="plan-period">/Semestral</span>
+          </div>
+          <p class="plan-payment-note">4x sem juros no cartão</p>
+          <div class="plan-divider"></div>
+          <ul class="plan-features">
+            <li>Musculação livre</li>
+            <li>Acesso nos horários padrão</li>
+            <li>Aulas inclusas</li>
+            <li>Auxilio dos Professores</li>
+          </ul>
+          <a class="plan-cta" href="#contact">Começar agora</a>
+        </div>
+        <!-- Fit Day -->
+        <div class="plan-card reveal reveal-delay-3">
+          <div class="plan-label">Plano</div>
+          <div class="plan-name">Pix</div>
+          <div class="plan-price-row">
+            <span class="plan-currency">R$</span>
+            <span class="plan-price">99,99</span>
+            <span class="plan-period">/mês</span>
+          </div>
+          <p class="plan-payment-note">Dinheiro ou Debito</p>
+          <div class="plan-divider"></div>
+          <ul class="plan-features">
+            <li>Musculação livre</li>
+            <li>Acesso nos horários padrão</li>
+            <li>Aulas inclusas</li>
+            <li>Auxilio dos Professores</li>
+          </ul>
+          <a class="plan-cta" href="#contact">Começar agora</a>
+        </div>
+      </div>
+      <p style="font-size:13px;color:var(--gray);margin-top:20px;text-align:center">Taxa de matricula = 35,00</p>
+      <p style="font-size:13px;color:var(--gray);margin-top:20px;text-align:center">Taxa de Avaliação Fisica = 50,00</p>
+      <p style="font-size:13px;color:var(--gray);margin-top:20px;text-align:center">Planos anuais com desconto especial
+        · Consulte condições na recepção</p>
+
+    </div>
+  </section>
+
+  <!-- GALERIA -->
+  <section class="gallery" id="gallery">
+    <video class="section-bg-video" autoplay muted loop playsinline>
+      <source src="assets/videos/video-footer.mp4" type="video/mp4">
+    </video>
+    <div class="section-video-overlay" aria-hidden="true"></div>
+    <div class="gallery-inner">
+      <div class="gal-header reveal">
+        <div class="section-tag">Nossa estrutura</div>
+        <h2 class="section-h2">Gale<span class="g">ria</span></h2>
+      </div>
+      <div class="gal-grid reveal">
+        <div class="gal-item">
+          <img class="gal-image" src="assets/aulas/boxe.JPG" alt="Treino de muay thai na Black Fit 19">
+          <div class="gal-placeholder">
+            <div class="gal-icon"><img class="gal-icon-img" src="assets/icones/muaythaiicone.png" alt="Ícone boxe e muay thai"></div>
+            <div class="gal-text">Muay Thai</div>
+          </div>
+        </div>
+        <div class="gal-item">
+          <img class="gal-image" src="assets/aulas/Fit dance.jpg" alt="Treino de boxe na Black Fit 19">
+          <div class="gal-placeholder">
+            <div class="gal-icon"><img class="gal-icon-img" src="assets/icones/fitdanceicone.png" alt="Ícone boxe e muay thai"></div>
+            <div class="gal-text">Fit Dance</div>
+          </div>
+        </div>
+        <div class="gal-item">
+          <img class="gal-image" src="assets/aulas/Funcional.jpg" alt="Treino funcional na Black Fit 19">
+          <div class="gal-placeholder">
+            <div class="gal-icon"><img class="gal-icon-img" src="assets/icones/funcionalicone.png" alt="Ícone boxe e muay thai"></div>
+            <div class="gal-text">Funcional</div>
+          </div>
+        </div>
+        <div class="gal-item">
+          <img class="gal-image" src="assets/aulas/stap.JPG" alt="Aula de step na Black Fit 19">
+          <div class="gal-placeholder">
+            <div class="gal-icon"><img class="gal-icon-img" src="assets/icones/stepicone.png" alt="Ícone boxe e muay thai"></div>
+            <div class="gal-text">Step</div>
+          </div>
+        </div>
+        <div class="gal-item">
+          <img class="gal-image" src="assets/icones/leao.PNG" alt="Treino de strong na Black Fit 19">
+          <div class="gal-placeholder">
+            <div class="gal-icon"><img class="gal-icon-img" src="assets/icones/strongicone.png" alt="Ícone boxe e muay thai"></div>
+            <div class="gal-text">Strong</div>
+          </div>
+        </div>
+        <div class="gal-item">
+          <img class="gal-image" src="assets/aulas/GAP.jpg" alt="Treino de gap na Black Fit 19">
+          <div class="gal-placeholder">
+            <div class="gal-icon"><img class="gal-icon-img" src="assets/icones/gapicone.png" alt="Ícone boxe e muay thai"></div>
+            <div class="gal-text">GAP</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="lightbox" id="lightbox">
+      <button class="lb-close" id="lbClose">&#x2715;</button>
+      <button class="lb-arrow lb-prev" id="lbPrev">&#8249;</button>
+      <button class="lb-arrow lb-next" id="lbNext">&#8250;</button>
+      <div class="lb-img-wrap">
+        <img class="lb-img" id="lbImg" src="" alt="">
+      </div>
+    </div>
+
+  </section>
+
+  <!-- CONTATO -->
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <div class="contact-left reveal">
+        <div class="section-tag">Fale conosco</div>
+        <h2 class="section-h2">Vem<br>ser <span class="g">Black</span></h2>
+        <p class="contact-desc">Dê o primeiro passo. Nossa equipe está pronta para tirar suas dúvidas e encontrar o
+          plano ideal para o seu objetivo.</p>
+        <div class="contact-info">
+          <div class="contact-row">
+            <span class="contact-row-label">Endereço</span>
+            <span class="contact-row-val">Avenida Furtado de Mendonça <br>São Paulo – SP</span>
+          </div>
+          <div class="contact-row">
+            <span class="contact-row-label">Horário</span>
+            <span class="contact-row-val">Seg–Sex: 06h–22h<br>Sáb: 08h–13h</span>
+          </div>
+          <div class="contact-row">
+            <span class="contact-row-label">Telefone</span>
+            <span class="contact-row-val">(11) 9 7164-4870</span>
+          </div>
+          <div class="contact-row">
+            <span class="contact-row-label">Instagram</span>
+            <span class="contact-row-val"><a href="https://www.instagram.com/blackfit19_academia/" target="_blank"
+                rel="noopener noreferrer">@BLACKFIT_19</a></span>
+          </div>
+        </div>
+      </div>
+      <div class="contact-right reveal reveal-delay-1">
+        <div class="form-group">
+          <label class="form-label">Nome completo</label>
+          <input type="text" class="form-input" placeholder="Seu nome">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Telefone / WhatsApp</label>
+          <input type="tel" class="form-input" placeholder="(11) 9 0000-0000">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Modalidade de interesse</label>
+          <select class="form-select">
+            <option value="">Selecione...</option>
+            <option>Musculação</option>
+            <option>Muay Thai</option>
+            <option>Boxe</option>
+            <option>HIIT / Funcional</option>
+            <option>Step</option>
+            <option>Strong</option>
+            <option>GAP / Alongamento</option>
+            <option>Plano Completo</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Mensagem (opcional)</label>
+          <textarea class="form-textarea" placeholder="Dúvidas, objetivos..."></textarea>
+        </div>
+        <a class="wpp-btn" href="https://wa.me/5511971644870" target="_blank">
+          <svg class="wpp-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+          </svg>
+          Falar pelo WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo"><img src="assets/icones/logo.jpg.PNG" alt="Logo Black Fit 19">Black<span>Fit</span> 19</div>
+    <div class="footer-copy">© 2026 Black Fit 19 · Todos os direitos reservados - Alvojr Gestão e tecnologia </div>
+  </footer>
+
+
+<div id="cookie-consent" class="cookie-consent" role="dialog" aria-live="polite" aria-label="Preferências de cookies">
+  <div class="cookie-consent-card">
+    <h3>Preferências de cookies</h3>
+    <p>Usamos cookies para melhorar sua experiência e personalizar conteúdos do site.</p>
+    <label><input type="checkbox" checked disabled> Cookies essenciais (sempre ativos)</label>
+    <label><input type="checkbox" id="cookie-analytics" checked> Cookies de desempenho e analytics</label>
+    <label><input type="checkbox" id="cookie-marketing"> Cookies de personalização e marketing</label>
+    <div class="cookie-consent-actions">
+      <button type="button" class="cookie-btn cookie-btn-ghost" id="cookie-reject">Recusar opcionais</button>
+      <button type="button" class="cookie-btn" id="cookie-accept">Aceitar seleção</button>
+    </div>
+  </div>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>

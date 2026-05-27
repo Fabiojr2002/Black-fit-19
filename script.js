@@ -91,3 +91,53 @@ document.addEventListener('keydown', e => {
   if (e.key === 'ArrowLeft')   navigate(-1);
 });
 
+// Consentimento de cookies personalizado
+const COOKIE_KEY = 'blackfit_cookie_preferences';
+const cookieBanner = document.getElementById('cookie-consent');
+const cookieAnalytics = document.getElementById('cookie-analytics');
+const cookieMarketing = document.getElementById('cookie-marketing');
+const cookieAccept = document.getElementById('cookie-accept');
+const cookieReject = document.getElementById('cookie-reject');
+
+function saveCookiePreferences(preferences) {
+  localStorage.setItem(COOKIE_KEY, JSON.stringify({
+    ...preferences,
+    essential: true,
+    consentedAt: new Date().toISOString()
+  }));
+  document.documentElement.dataset.cookieConsent = 'accepted';
+}
+
+function hideCookieBanner() {
+  if (cookieBanner) cookieBanner.classList.remove('is-visible');
+}
+
+if (cookieBanner) {
+  const savedPreferences = localStorage.getItem(COOKIE_KEY);
+
+  if (!savedPreferences) {
+    cookieBanner.classList.add('is-visible');
+  } else {
+    document.documentElement.dataset.cookieConsent = 'accepted';
+    try {
+      const parsed = JSON.parse(savedPreferences);
+      if (cookieAnalytics) cookieAnalytics.checked = !!parsed.analytics;
+      if (cookieMarketing) cookieMarketing.checked = !!parsed.marketing;
+    } catch (_) {}
+  }
+
+  cookieAccept?.addEventListener('click', () => {
+    saveCookiePreferences({
+      analytics: !!cookieAnalytics?.checked,
+      marketing: !!cookieMarketing?.checked
+    });
+    hideCookieBanner();
+  });
+
+  cookieReject?.addEventListener('click', () => {
+    saveCookiePreferences({ analytics: false, marketing: false });
+    if (cookieAnalytics) cookieAnalytics.checked = false;
+    if (cookieMarketing) cookieMarketing.checked = false;
+    hideCookieBanner();
+  });
+}
